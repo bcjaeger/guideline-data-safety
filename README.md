@@ -1,0 +1,29 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# guideline-data-safety
+
+The goal of guideline-data-safety is to demonstrate some helpful ways to
+keep sensitive information local while sharing the non-sensitive
+information (i.e., code) online.
+
+## Using `.gitignore`
+
+`.gitignore` is a special file used by git. Each line in the ignore file
+represents a pattern that git should not track. The video linked below
+walks through how you can set up a new project in Rstudio and designate
+a location where sensitive data will be stored and ignored by git.
+
+[![Use
+gitignore](https://img.youtube.com/vi/xYChS1ADohg/0.jpg)](https://www.youtube.com/watch?v=xYChS1ADohg)
+
+## Using `.Renviron`
+
+The `.Renviron` file saves variables that you can access from R using
+`Sys.getenv()`. It is very helpful for accessing passwords and other
+secrets you do not wish to put online. The video linked below walks
+through an example demonstrating how to add new variables to your
+`.Renviron` file and access them.
+
+[![Use
+Renviron](https://img.youtube.com/vi/b2hK998ZtpQ/0.jpg)](https://youtu.be/b2hK998ZtpQ)
